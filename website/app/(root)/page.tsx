@@ -4,15 +4,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div>
-        <div className="absolute top-0 left-0 overflow-x-hidden h-[960px] -z-10 bg-black/100 flex justify-center items-center w-screen">
+      <div className="h-[calc(100vh-90px)] relative w-full">
+        <div className="absolute top-[-90px] h-[100vh] -z-10 bg-black/100 flex justify-center items-center w-full]">
           <img
             src={"/images/background.webp"}
             alt={""}
-            className="h-full w-[1920px] max-w-[1920px]"
+            className="object-center object-cover overflow-clip w-[calc(100vw + 3000px)]"
           />
         </div>
-        <div className="h-screen z-10 w-full pb-[30px] flex items-center justify-end flex-col gap-[280px]">
+        <div className="absolute top-[calc(50%-90px)] left-[50%] z-10 w-min h-[800px] -translate-x-[50%] -translate-y-[50%] pb-[30px] flex items-center justify-end flex-col gap-[280px]">
           <div className="flex items-center justify-start flex-col">
             <div className="flex items-center">
               <span className="text-[72px] font-extrabold text-white leading-[1.2em]">
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-start flex-col py-[120px] gap-[56px]">
+      <div className="flex items-center justify-start flex-col py-[120px] gap-[56px] overflow-x-hidden">
         <div className="flex items-center justify-start flex-col gap-[8px]">
           <span className="text-[36px] font-extrabold leading-[1.2em]">
             EVENTS
@@ -196,7 +196,7 @@ export default function Home() {
           </span>
         </div>
         <div className="flex flex-col items-center justify-start gap-[60px]">
-          <div className="flex flex-col items-center justify-start gap-[24px] w-screen overflow-x-hidden">
+          <div className="flex flex-col items-center justify-start gap-[24px]">
             <div className="text-[28px] font-extrabold tracking-[0.05em] leading-[1.2em]">
               HYPER
             </div>
@@ -205,26 +205,26 @@ export default function Home() {
             </div>
             <div className="h-[449px] w-full">
               <section className="flex justify-center items-center relative">
-                <div className="gap-[10px] max-w-[1823px] w-[1823px] flex items-center justify-center absolute top-2">
-                  <div className="w-full">
+                <div className="gap-[10px] w-[calc(601px+601px+601px+20px)] flex items-center justify-center absolute top-2 place-items-center ">
+                  <div className="">
                     <img
                       src="/images/left.webp"
                       alt=""
-                      className="h-[400px] w-[601px]"
+                      className="h-[400px] w-[601px] object-cover"
                     />
                   </div>
-                  <div className="w-full">
+                  <div className="">
                     <img
                       src="/images/center.webp"
                       alt=""
-                      className="h-[400px] w-[601px]"
+                      className="h-[400px] w-[601px] object-cover"
                     />
                   </div>
-                  <div className="w-full">
+                  <div className="">
                     <img
                       src="/images/right.webp"
                       alt=""
-                      className="h-[400px] w-[601px]"
+                      className="h-[400px] w-[601px] object-cover"
                     />
                   </div>
                 </div>
@@ -322,7 +322,60 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <footer className="flex items-center justify-center gap-[24px] flex-col"></footer>
+      <footer className="flex items-center justify-center gap-[24px] flex-col bg-[#3c3c3c] pt-[24px] pb-[50px]">
+        <div className="text-[18px] leading-[27px] text-[#b8b8b8]">
+          Copyright © 2024 KDSC - All Rights Reserved
+        </div>
+        <div className="flex items-center justify-center gap-[28px]">
+          <div className="flex justify-start flex-col">
+            <span className="text-[20px] leading-[27px] text-white font-normal">
+              <Link className="underline" href={"https://festa.io/hosts/2003"}>
+                FESTA
+              </Link>
+            </span>
+          </div>
+          <div className="flex justify-start flex-col">
+            <span className="text-[20px] leading-[27px] text-white font-normal">
+              <Link
+                className="underline"
+                href={"https://github.com/Korea-Student-Developer-Club"}
+              >
+                GITHUB
+              </Link>
+            </span>
+          </div>
+          <div className="flex justify-start flex-col">
+            <span className="text-[20px] leading-[27px] text-white font-normal">
+              <Link
+                className="underline"
+                href={"https://www.instagram.com/ksdc.io/"}
+              >
+                INSTAGRAM
+              </Link>
+            </span>
+          </div>
+          <div className="flex justify-start flex-col">
+            <span className="text-[20px] leading-[27px] text-white font-normal">
+              <Link
+                className="underline"
+                href={"https://open.kakao.com/o/gGAJxvvf"}
+              >
+                KAKAOTALK
+              </Link>
+            </span>
+          </div>
+          <div className="flex justify-start flex-col">
+            <span className="text-[20px] leading-[27px] text-white font-normal">
+              <Link
+                className="underline"
+                href={"https://discord.com/invite/5j3STkjprb"}
+              >
+                DISCORD
+              </Link>
+            </span>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

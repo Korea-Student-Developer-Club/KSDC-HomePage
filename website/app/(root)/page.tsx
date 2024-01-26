@@ -311,7 +311,8 @@ export default function Home() {
             아는 분들과만 소통하는 것보다, 누구에게든 다정하게 대화를
             걸어주세요!
             <br />
-            처음 만나는 분께는 "OO님"과 같은 존칭을 사용해주시길 부탁드려요.
+            처음 만나는 분께는 &quot;OO님&quot;과 같은 존칭을 사용해주시길
+            부탁드려요.
           </p>
           <p className="text-[22px] font-normal leading-[42px]">
             친한 지인이라도 상대방이 불쾌할 수 있는 언어나 내용을 피해주세요.

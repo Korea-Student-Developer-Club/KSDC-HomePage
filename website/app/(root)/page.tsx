@@ -139,7 +139,7 @@ export default function Home() {
           </span>
         </div>
         <div className="flex justify-start items-center gap-[24px] flex-col">
-          <div className="flex items-center justify-center gap-[48px] mb:gap-[36px]">
+          <div className="flex items-center justify-center gap-[48px] mb:gap-[24px]">
             <span className="text-[32px] font-extrabold leading-[1.2em] mb:text-[24px]">
               정현서
             </span>
@@ -150,7 +150,7 @@ export default function Home() {
               김마유
             </span>
           </div>
-          <div className="flex items-center justify-center gap-[48px] mb:gap-[36px]">
+          <div className="flex items-center justify-center gap-[48px] mb:gap-[24px]">
             <span className="text-[32px] font-extrabold leading-[1.2em] mb:text-[24px]">
               김민재
             </span>
@@ -259,9 +259,10 @@ export default function Home() {
               <p className="text-[20px] text-center font-normal tracking-[0.05em]">
                 기술에 대한 입문자들을 대상으로 하여
               </p>
-              <p className="text-[20px] text-center font-normal tracking-[0.05em]">
-                새로운 기술을 케이크 먹듯이 쉽게 배울 수 있는 스터디 밋업입니다.
-              </p>
+              <div className="text-[20px] text-center font-normal tracking-[0.05em]">
+                새로운 기술을 케이크 먹듯이 쉽게
+                <p>배울 수 있는 스터디 밋업입니다.</p>
+              </div>
               <p className="text-[20px] text-center font-normal tracking-[0.05em]">
                 현재 많은 분야의 발표자분들을 모집중입니다.
               </p>

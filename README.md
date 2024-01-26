@@ -9,7 +9,6 @@ Korea Student Developer Club's HomePage
 ### Contributors
 
 - 국재윤
-- 장준하
 
 ### Project Goals
 

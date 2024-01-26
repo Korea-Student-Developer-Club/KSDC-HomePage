@@ -1,9 +1,28 @@
 import type { Metadata } from "next";
+import "./globals.css";
 import localFont from "next/font/local";
 
-// Font files can be colocated inside of `app`
 const NanumSquare = localFont({
-  src: "../public/fonts/NanumSquareR.woff2",
+  src: [
+    {
+      path: "../public/fonts/NanumSquare_acL.ttf",
+      weight: "300",
+    },
+
+    {
+      path: "../public/fonts/NanumSquare_acR.ttf",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/NanumSquare_acB.ttf",
+      weight: "700",
+    },
+    {
+      path: "../public/fonts/NanumSquare_acEB.ttf",
+      weight: "800",
+    },
+  ],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

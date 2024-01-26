@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 // Font files can be colocated inside of `app`
 const NanumSquare = localFont({
   src: "../public/fonts/NanumSquareR.woff2",
-  display: "swap",
 });
 
 export const metadata: Metadata = {

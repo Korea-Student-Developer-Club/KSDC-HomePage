@@ -28,6 +28,9 @@ const NanumSquare = localFont({
 export const metadata: Metadata = {
   title: "KSDC",
   description: "Korea Student Developer Club의 홈페이지",
+  icons: {
+    icon: "/images/logo.webp",
+  },
 };
 
 export default function RootLayout({
